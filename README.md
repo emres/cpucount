@@ -27,6 +27,7 @@ After that you can run the resulting program:
 
     $ ./call_cpucount_lib
 
-## Dependencies This software has been tested on an Ubuntu GNU/Linux 17.10,
-using GCC 7.2.0 and GNU Make 4.1. There are no other dependencies.
+## Dependencies
+This software has been tested on an Ubuntu GNU/Linux 17.10, using GCC 7.2.0 and
+GNU Make 4.1. There are no other dependencies.
 
