@@ -1,7 +1,6 @@
 # How to count CPU cores
-
-This is a sample project that I started to satisfy my curiosity: "How to count
-CPU cores by building and using a shared library?"
+I built this sample project to satisfy my curiosity: "How to count CPU cores by
+building and using a shared library in GNU/Linux?"
 
 My curiosity was triggered by a few things:
 
