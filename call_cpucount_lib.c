@@ -21,14 +21,11 @@ int main() {
                  */
                  *(void **)(&ext_get_num_cpu_cores) = dlsym(cpucount_lib, "get_num_cpu_cores");                
                 num_cpu_cores = ext_get_num_cpu_cores();
+                dlclose(cpucount_lib);
+                printf("Number of CPU cores: %d\n", num_cpu_cores);
+                return EXIT_SUCCESS;
         } else {
                 printf("ERROR opening the shared library %s!\n", SHARED_CPU_LIB);
                 return ELIBACC; // "Can not access a needed shared library."
         }
-
-        printf("Number of CPU cores: %d\n", num_cpu_cores);
-
-        dlclose(cpucount_lib);
-        
-        return EXIT_SUCCESS;
 }
