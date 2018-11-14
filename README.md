@@ -12,7 +12,7 @@ number of CPUs.
 [getconf](https://linux.die.net/man/1/getconf).
 
 First I became curious about the origin of "84" in
-(cl-cpus-linux.lisp)[https://github.com/muyinliu/cl-cpus/blob/master/cl-cpus-linux.lisp],
+[cl-cpus-linux.lisp](https://github.com/muyinliu/cl-cpus/blob/master/cl-cpus-linux.lisp),
 and then I also wanted to see how I can build and consume a shared library but
 by using GCC on Linux (the Common Lisp Cookbook example uses Clang on Mac OS X).
 
