@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -std=c99 -pedantic
 LDFLAGS=-ldl
-SHAREDLIBFLAGS=-shared -nostartfiles
+SHAREDLIBFLAGS=-fPIC -shared -nostartfiles
 
 call_cpucount_lib: call_cpucount_lib.o cpucount_lib.so
 	$(CC) -o call_cpucount_lib call_cpucount_lib.c $(CFLAGS) $(LDFLAGS)
